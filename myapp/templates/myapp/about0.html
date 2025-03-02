@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About - Online Store APP</title>
+</head>
+<body>
+    <h1>About the Online Store APP</h1>
+    <p>This is an Online Store APP designed to showcase products and categories.</p>
+
+    <!-- Link to go back to the index page (using hardcoded URL) -->
+    <p><a href="/myapp">Go back to the Main Page (Hardcoded URL)</a></p>
+
+    <!-- Link to go back to the index page (using URL namespacing) -->
+    <p><a href="{% url 'myapp:index' %}">Go back to the Main Page (URL Namespacing)</a></p>
+
+    <!-- Example of using context variables in the template -->
+    <h2>Welcome to {{ store_name }}</h2>
+    <p>Established in {{ year }}.</p>
+
+</body>
+</html>

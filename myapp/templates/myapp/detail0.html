@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Category Details</title>
+</head>
+<body>
+    <h1>Category: {{ category.name }}</h1>
+    <p><strong>Warehouse Location:</strong> {{ warehouse_location }}</p>
+
+    <h2>List of Products in this Category:</h2>
+    <ul>
+        {% for product in product_list %}
+            <li>{{ product.name }} - ${{ product.price }}</li>
+        {% empty %}
+            <li>No products available for this category.</li>
+        {% endfor %}
+    </ul>
+
+    <p><a href="{% url 'myapp:index' %}">Go back to the Main Page</a></p>
+</body>
+</html>

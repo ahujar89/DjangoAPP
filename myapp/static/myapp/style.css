@@ -1,0 +1,37 @@
+/* General body styling */
+body {
+    background-color: #f0f0f0; /* Default background color */
+    color: #333; /* Default text color */
+    font-family: Arial, sans-serif; /* Default font */
+}
+
+/* Styling for h1 tags */
+h1 {
+    font-size: 2em; /* Default font size */
+    color: #007BFF; /* Blue color for h1 */
+    font-style: italic; /* Italic font style */
+    text-align: center; /* Center alignment for h1 */
+    position: relative; /* Relative positioning */
+}
+
+/* Define the .hbar1 class */
+.hbar1 {
+    display: inline;
+    margin: 15px;
+}
+
+/* Optional additional styling */
+p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Link styling */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
